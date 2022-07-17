@@ -4,7 +4,7 @@
 
 ## Programação para Web II
 
-### Proposta do Trabalho
+# Proposta do Trabalho
 
 Desenvolvimento de um site para Cadastro de Certificados com horas extra curriculares. O coordenador será capaz de cadastrar um aluno, deferir ou não deferir e alterar os certificados cadastrados. O Aluno cadastrado pelo coordenador deverá cadastrar os certificados com descrição, data, hora e pdf do certificado. Por fim o coordenador deve conseguir imprimir a lista de certificados por nome do aluno e a contagem total de horas.
 
