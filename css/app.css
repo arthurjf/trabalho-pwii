@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #1659bf;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.login .vr {
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: rgb(0, 0, 0, .5);
+    width: 1px;
+}
+
+.login .row {
+    margin: 0;
+    padding: 0;
+}
+
+.login .btn-primary {
+    background-color: var(--primary-color);
+}
+
+.login .btn-primary,
+.btn-secondary {
+    font-weight: 600;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.login .panel {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.login .title {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0, .125);
+}
+
+.login .title h2 {
+    font-weight: 600;
+    padding: 12px;
+    padding-left: 40px;
+    color: var(--primary-color);
+}
+
+.login .item {
+    padding: 40px;
+}
+
+.login .item .subtitle {
+    font-weight: 400;
+}
