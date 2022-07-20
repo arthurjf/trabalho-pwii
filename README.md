@@ -26,3 +26,27 @@ Desenvolvimento de um site para Cadastro de Certificados com horas extra curricu
 - [ ] Cadastro de aluno (pelo coordenador).
 - [ ] Deferir, indeferir e alterar certificados cadastrados.
 - [ ] Imprimir a lista de certificado por nome do aluno e a contagem total de horas.
+
+# Banco de Dados
+
+## Nome
+```sql
+db_trabalho
+```
+
+## Criação de Tabela(s)
+
+### Pessoa
+```sql
+CREATE TABLE tb_pessoa(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(60) NOT NULL, email VARCHAR(50) NOT NULL, senha VARCHAR(50) NOT NULL) ENGINE=InnoDB;
+```
+
+### Aluno
+```sql
+CREATE TABLE tb_aluno(id INTEGER AUTO_INCREMENT PRIMARY KEY, id_pessoa INTEGER NOT NULL, FOREIGN KEY (id_pessoa) REFERENCES tb_pessoa(id)) ENGINE=InnoDB;
+```
+
+### Coordenador
+```sql
+CREATE TABLE tb_coordenador(id INTEGER AUTO_INCREMENT PRIMARY KEY, id_pessoa INTEGER NOT NULL, FOREIGN KEY (id_pessoa) REFERENCES tb_pessoa(id)) ENGINE=InnoDB;
+```
