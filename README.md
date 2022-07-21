@@ -17,12 +17,12 @@ Desenvolvimento de um site para Cadastro de Certificados com horas extra curricu
 # A Fazer
 
 ## Área do Aluno
-- [ ] Login do aluno.
+- [X] Login do aluno.
 - [ ] Cadastrar certificado com descrição, data, hora e pdf.
 
 ## Área do Coordenador
-- [ ] Cadastro do coordenador.
-- [ ] Login do coordenador.
+- [X] Cadastro do coordenador.
+- [X] Login do coordenador.
 - [ ] Cadastro de aluno (pelo coordenador).
 - [ ] Deferir, indeferir e alterar certificados cadastrados.
 - [ ] Imprimir a lista de certificado por nome do aluno e a contagem total de horas.

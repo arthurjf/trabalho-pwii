@@ -16,44 +16,53 @@ html {
     width: 1px;
 }
 
-.login .row {
+.login .row,
+.signup .row {
     margin: 0;
     padding: 0;
 }
 
-.login .btn-primary {
+.login .btn-primary,
+.signup .btn-primary {
     background-color: var(--primary-color);
 }
 
 .login .btn-primary,
-.btn-secondary {
+.login .btn-secondary,
+.signup .btn-primary,
+.signup .btn-secondary,
+.signup .btn-outline-danger {
     font-weight: 600;
     width: 100%;
     border-radius: 0px;
 }
 
-.login .panel {
+.login .panel,
+.signup .panel {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.login .title {
+.login .title,
+.signup .title {
     border: solid;
     border-width: 1px;
     border-color: rgb(0, 0, 0, .125);
 }
 
-.login .title h2 {
+.login .title h2,
+.signup .title h2 {
     font-weight: 600;
     padding: 12px;
     padding-left: 40px;
     color: var(--primary-color);
 }
 
-.login .item {
+.login .item,
+.signup .item {
     padding: 40px;
 }
 
-.login .item .subtitle {
+.login .item .subtitle, {
     font-weight: 400;
 }
