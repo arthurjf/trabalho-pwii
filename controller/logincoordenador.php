@@ -1,9 +1,8 @@
 <?php
-include_once("../classes/manipuladados.php");
+include_once("../classes/CoordenadorManipulaDados.php");
 session_start();
 
-$manipula = new manipuladados();
-$manipula->setTable("tb_coordenador");
+$manipula = new CoordenadorManipulaDados();
 
 $login = $_POST['txtEmail'];
 $senha = $_POST['txtSenha'];
@@ -20,5 +19,5 @@ if ($dadosLogin == null) {
     $_SESSION["email"] = $dadosLogin->email;
     setcookie("email_usuario", $dadosLogin->email);
     setcookie("senha_usuario", $password);
-    header("location: ../aluno/index.php");
+    header("location: ../coordenador/index.php");
 }

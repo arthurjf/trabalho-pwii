@@ -1,5 +1,5 @@
 <?php
-include_once("classes/verurl.php");
+include_once("classes/Verurl.php");
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ include_once("classes/verurl.php");
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Sistema de Hora </title>
+    <title>Sistema de Certificados</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
@@ -18,7 +18,7 @@ include_once("classes/verurl.php");
 
 <body>
     <?php
-    $red = new verurl();
+    $red = new Verurl();
     $red->trocarUrl(@$_GET['secao']);
     ?>
 </body>

@@ -1,7 +1,5 @@
 <?php
-include_once("../classes/manipuladados.php");
-
-$manipula = new manipuladados();
+include_once("../classes/CoordenadorManipulaDados.php");
 
 $nome = $_POST['txtNome'];
 $email = $_POST['txtEmail'];
@@ -10,7 +8,7 @@ $botao = $_POST['button'];
 
 switch ($botao) {
     case "insert":
-        $inserirCoordenador = new manipuladados();
+        $inserirCoordenador = new CoordenadorManipulaDados();
         $inserirCoordenador->setTable("tb_pessoa");
         $inserirCoordenador->setFields("nome, email, senha");
         $inserirCoordenador->setDados("'$nome', '$email', '$senha'");
@@ -18,7 +16,7 @@ switch ($botao) {
 
         $insertId = $inserirCoordenador->getLastInsertId();
 
-        $inserirPessoa = new manipuladados();
+        $inserirPessoa = new CoordenadorManipulaDados();
         $inserirPessoa->setTable("tb_coordenador");
         $inserirPessoa->setFields("id_pessoa");
         $inserirPessoa->setDados("$insertId");
