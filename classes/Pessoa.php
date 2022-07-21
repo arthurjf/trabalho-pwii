@@ -1,5 +1,5 @@
 <?php
-class Pessoa
+abstract class Pessoa
 {
     public $id;
     public $nome;
