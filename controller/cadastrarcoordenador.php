@@ -1,16 +1,15 @@
 <?php
-include_once("../classes/manipuladados.php");
+include_once("../classes/CoordenadorManipulaDados.php");
 
-$manipula = new manipuladados();
-
-$nome = $_POST['txtNome'];
-$email = $_POST['txtEmail'];
-$senha = $_POST['txtSenha'];
 $botao = $_POST['button'];
 
 switch ($botao) {
     case "insert":
-        $inserirCoordenador = new manipuladados();
+        $nome = $_POST['txtNome'];
+        $email = $_POST['txtEmail'];
+        $senha = $_POST['txtSenha'];
+
+        $inserirCoordenador = new CoordenadorManipulaDados();
         $inserirCoordenador->setTable("tb_pessoa");
         $inserirCoordenador->setFields("nome, email, senha");
         $inserirCoordenador->setDados("'$nome', '$email', '$senha'");
@@ -18,12 +17,13 @@ switch ($botao) {
 
         $insertId = $inserirCoordenador->getLastInsertId();
 
-        $inserirPessoa = new manipuladados();
+        $inserirPessoa = new CoordenadorManipulaDados();
         $inserirPessoa->setTable("tb_coordenador");
         $inserirPessoa->setFields("id_pessoa");
         $inserirPessoa->setDados("$insertId");
         $inserirPessoa->insert();
+
+        echo '<script> alert("' . $inserirCoordenador->getStatus() . '");</script>';
         break;
 }
-echo '<script> alert("' . $inserirCoordenador->getStatus() . '");</script>';
 echo "<script> location = '../index.php';</script>";

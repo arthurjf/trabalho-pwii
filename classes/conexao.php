@@ -1,6 +1,6 @@
 <?php
 
-class conexao
+abstract class Conexao
 {
     protected $host, $user, $pass, $dba, $conn, $sql, $qr, $data, $status, $totalFields, $error;
 

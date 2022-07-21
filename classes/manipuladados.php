@@ -1,50 +1,12 @@
 <?php
 
-include_once("conexao.php");
+include_once("Conexao.php");
 
-class LoginDados
-{
-    public $id;
-    public $idPessoa;
-    public $nome;
-    public $email;
-}
-
-class manipuladados extends conexao
+abstract class ManipulaDados extends conexao
 {
     protected $sql, $qr, $table, $fields, $dados, $status, $fieldId, $valueId;
 
-    public function validarLogin($login, $password)
-    {
-        $this->sql = "SELECT $this->table.id AS id, 
-        tb_pessoa.id AS pessoa_id, tb_pessoa.nome, tb_pessoa.email 
-        FROM $this->table 
-        INNER JOIN tb_pessoa 
-        ON $this->table.id_pessoa = tb_pessoa.id 
-        WHERE tb_pessoa.email = '$login' 
-        AND tb_pessoa.senha = '$password'";
-
-        $this->query = self::execSQL($this->sql);
-
-        $linhas = @mysqli_num_rows($this->qr);
-
-        $dados = array();
-
-        while ($row = @mysqli_fetch_assoc($this->qr)) {
-            array_push($dados, $row);
-        }
-
-        $output = null;
-        if ($linhas > 0) {
-            $output = new LoginDados();
-            $output->id = $dados["id"];
-            $output->idPessoa = $dados["pessoa_id"];
-            $output->nome = $dados["nome"];
-            $output->email = $dados["email"];
-        }
-
-        return $output;
-    }
+    public abstract function validarLogin($login, $password);
 
     public function setTable($t)
     {

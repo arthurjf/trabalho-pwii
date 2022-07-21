@@ -1,9 +1,8 @@
 <?php
-include_once("../classes/manipuladados.php");
+include_once("../classes/AlunoManipulaDados.php");
 session_start();
 
-$manipula = new manipuladados();
-$manipula->setTable("tb_aluno");
+$manipula = new AlunoManipulaDados();
 
 $login = $_POST['txtEmail'];
 $senha = $_POST['txtSenha'];
