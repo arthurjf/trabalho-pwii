@@ -1,5 +1,5 @@
 <?php
-include_once("classes/verurl.php");
+include_once("classes/Verurl.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ include_once("classes/verurl.php");
 
 <body>
     <?php
-    $red = new verurl();
+    $red = new Verurl();
     $red->trocarUrl(@$_GET['secao']);
     ?>
 </body>
