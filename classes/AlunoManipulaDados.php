@@ -9,8 +9,8 @@ class AlunoManipulaDados extends ManipulaDados
     {
         $this->sql = "SELECT tb_aluno.id AS aluno_id, 
         tb_pessoa.id AS pessoa_id, 
-        tb_pessoa.nome, 
-        tb_pessoa.email,
+        tb_pessoa.nome AS nome, 
+        tb_pessoa.email AS email 
         tb_aluno.matricula AS matricula
         FROM tb_aluno 
         INNER JOIN tb_pessoa 
@@ -31,11 +31,11 @@ class AlunoManipulaDados extends ManipulaDados
         $output = null;
         if ($linhas > 0) {
             $output = new Aluno();
-            $output->id = $dados["id"];
-            $output->idAluno = $dados["aluno_id"];
-            $output->matricula = $dados["matricula"];
-            $output->nome = $dados["nome"];
-            $output->email = $dados["email"];
+            $output->id = $dados[0]["pessoa_id"];
+            $output->idAluno = $dados[0]["aluno_id"];
+            $output->matricula = $dados[0]["matricula"];
+            $output->nome = $dados[0]["nome"];
+            $output->email = $dados[0]["email"];
         }
 
         return $output;
