@@ -1,6 +1,6 @@
 <?php
-include_once("../classes/AlunoManipulaDados.php");
 session_start();
+include_once("../classes/AlunoManipulaDados.php");
 
 $manipula = new AlunoManipulaDados();
 
@@ -16,8 +16,7 @@ if ($dadosLogin == null) {
     $_SESSION["id"] = $dadosLogin->id;
     $_SESSION["idPessoa"] = $dadosLogin->idPessoa;
     $_SESSION["nome"] = $dadosLogin->nome;
-    $_SESSION["email"] = $dadosLogin->email;
-    setcookie("email_usuario", $dadosLogin->email);
-    setcookie("senha_usuario", $password);
+    $_SESSION["email"] = $login;
+    $_SESSION["senha"] = $senha;
     header("location: ../aluno/index.php");
 }

@@ -1,4 +1,5 @@
 <?php
+include_once("validarsessao.php");
 include_once("classes/Verurl.php");
 ?>
 
@@ -18,8 +19,12 @@ include_once("classes/Verurl.php");
 
 <body>
     <?php
+    include_once("includes/cabecalho.php");
+
     $red = new Verurl();
     $red->trocarUrl(@$_GET['secao']);
+
+    include_once("includes/rodape.php");
     ?>
 </body>
 

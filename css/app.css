@@ -1,5 +1,6 @@
 :root {
     --primary-color: #1659bf;
+    --secondary-color: #0c326c;
 }
 
 body,
@@ -25,6 +26,12 @@ html {
 .login .btn-primary,
 .signup .btn-primary {
     background-color: var(--primary-color);
+}
+
+.login .btn-primary:hover,
+.signup .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .login .btn-primary,
@@ -63,6 +70,64 @@ html {
     padding: 40px;
 }
 
-.login .item .subtitle, {
+.login .item .subtitle {
     font-weight: 400;
+}
+
+.cabecalho .navbar {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cabecalho .navbar a {
+    font-weight: 600;
+    color: white;
+}
+
+.cabecalho .navbar a:hover {
+    color: black;
+}
+
+.cabecalho .navbar .dropdown-item {
+    color: black;
+    background-color: white;
+}
+
+.cabecalho .navbar .dropdown-item:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.cabecalho .navbar-brand img {
+    height: 90px;
+}
+
+.cabecalho .navbar .dropdown-menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho .navbar .dropdown-menu li {
+    margin: 5px;
+}
+
+.rodape {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.rodape .row {
+    padding: 30px 0;
+}
+
+.rodape .brand img {
+    height: 100px;
+}
+
+.rodape .integrantes .title {
+    font-weight: bold;
+}
+
+.rodape .integrantes p {
+    margin: 0.2rem;
 }
