@@ -1,4 +1,4 @@
-<div class="container h-100">
+<div class="container mt-4 h-100">
     <h2 class="text-center">Cadastrar Aluno</h2>
     <form action="controller/cadastraraluno.php" method="post">
         <div class="mb-3">
