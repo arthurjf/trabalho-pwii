@@ -8,11 +8,11 @@
                 <form action="controller/cadastrarcoordenador.php" method="post">
                     <div class="mb-3">
                         <label class="form-label">Nome completo</label>
-                        <input name="txtNome" type="name" class="form-control" />
+                        <input name="txtNome" type="name" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">E-mail</label>
-                        <input name="txtEmail" type="email" class="form-control" />
+                        <input name="txtEmail" type="email" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Senha</label>
@@ -21,10 +21,10 @@
                     <div class="mb-3">
                         <button name="button" type="submit" value="insert" class="btn btn-primary">Cadastrar</button>
                     </div>
-                    <div class="mb-3">
-                        <button name="button" type="submit" value="cancel" class="btn btn-outline-danger">Cancelar</button>
-                    </div>
                 </form>
+                <div class="mb-3">
+                    <a href="index.php" class="btn btn-outline-danger">Cancelar</a>
+                </div>
             </section>
         </div>
     </div>
