@@ -10,7 +10,7 @@ class CoordenadorManipulaDados extends ManipulaDados
         $this->sql = "SELECT tb_coordenador.id AS coordenador_id, 
         tb_pessoa.id AS pessoa_id, 
         tb_pessoa.nome AS nome, 
-        tb_pessoa.email AS email 
+        tb_pessoa.email AS email, 
         FROM tb_coordenador 
         INNER JOIN tb_pessoa 
         ON tb_coordenador.id_pessoa = tb_pessoa.id 

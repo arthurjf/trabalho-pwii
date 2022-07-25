@@ -16,7 +16,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Senha</label>
-                        <input name="txtSenha" type="password" class="form-control" />
+                        <input name="txtSenha" type="password" class="form-control" required minlength="4" />
                     </div>
                     <div class="mb-3">
                         <button name="button" type="submit" value="insert" class="btn btn-primary">Cadastrar</button>
