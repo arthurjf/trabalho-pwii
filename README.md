@@ -86,3 +86,8 @@ CREATE TABLE tb_aluno(id INTEGER AUTO_INCREMENT PRIMARY KEY, id_pessoa INTEGER N
 ```sql
 CREATE TABLE tb_coordenador(id INTEGER AUTO_INCREMENT PRIMARY KEY, id_pessoa INTEGER NOT NULL, FOREIGN KEY (id_pessoa) REFERENCES tb_pessoa(id)) ENGINE=InnoDB;
 ```
+
+### Certificado
+```sql
+CREATE TABLE tb_certificado(id INTEGER AUTO_INCREMENT PRIMARY KEY, descricao VARCHAR (255), data DATE, hora TIME, url VARCHAR (255), id_aluno INTEGER, status INTEGER (11), FOREIGN KEY (id_aluno) REFERENCES tb_aluno(id));
+```

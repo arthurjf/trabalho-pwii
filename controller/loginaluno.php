@@ -13,8 +13,8 @@ if ($dadosLogin == null) {
     echo '<script>alert("Nome ou senha não cadastrada ou incorreta")</script>';
     echo "<script>location = '../index.php';</script>";
 } else {
-    $_SESSION["id"] = $dadosLogin->id;
-    $_SESSION["idPessoa"] = $dadosLogin->idPessoa;
+    $_SESSION["id"] = $dadosLogin->idAluno;
+    $_SESSION["idPessoa"] = $dadosLogin->id;
     $_SESSION["nome"] = $dadosLogin->nome;
     $_SESSION["email"] = $login;
     $_SESSION["senha"] = $senha;
