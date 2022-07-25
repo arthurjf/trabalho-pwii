@@ -3,6 +3,7 @@
     <form action="controller/cadastrarcertificado.php" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <input type="hidden" name="nome" value='<?= $_SESSION["nome"] ?>' />
+            <input type="hidden" name="idAluno" value='<?= $_SESSION["id"] ?>' />
             <label class="form-label">Descrição</label>
             <input name="txtDescricao" type="text" class="form-control" />
         </div>
