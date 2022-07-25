@@ -1,5 +1,5 @@
 <div class="container mt-4 h-100">
-    <h2 class="text-center">Cadastrar Certificado <?= $_SESSION["nome"] ?></h2>
+    <h2 class="text-center">Cadastrar Certificado</h2>
     <form action="controller/cadastrarcertificado.php" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <input type="hidden" name="nome" value='<?= $_SESSION["nome"] ?>' />
