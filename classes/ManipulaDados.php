@@ -2,12 +2,12 @@
 
 include_once("Conexao.php");
 
-abstract class ManipulaDados extends conexao
+abstract class ManipulaDados extends Conexao
 {
     protected $sql, $qr, $table, $fields, $dados, $status, $fieldId, $valueId;
 
     public abstract function validarLogin($login, $password);
-
+    public abstract function insert();
     public function setTable($t)
     {
         $this->table = $t;
@@ -38,16 +38,7 @@ abstract class ManipulaDados extends conexao
         $this->valueId = $id;
     }
 
-    public function insert()
-    {
-        $this->sql = "INSERT INTO $this->table($this->fields) VALUES($this->dados)";
-
-        if (self::execSQL($this->sql)) {
-            $this->status = "Cadastrado com Sucesso!";
-        } else {
-            $this->status = "Erro ao cadastrar" . mysqli_error();
-        }
-    }
+   
 
     public function getLastInsertId()
     {

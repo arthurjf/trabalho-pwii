@@ -10,7 +10,7 @@ class AlunoManipulaDados extends ManipulaDados
         $this->sql = "SELECT tb_aluno.id AS aluno_id, 
         tb_pessoa.id AS pessoa_id, 
         tb_pessoa.nome AS nome, 
-        tb_pessoa.email AS email 
+        tb_pessoa.email AS email, 
         tb_aluno.matricula AS matricula
         FROM tb_aluno 
         INNER JOIN tb_pessoa 
@@ -39,5 +39,15 @@ class AlunoManipulaDados extends ManipulaDados
         }
 
         return $output;
+    }
+    public function insert()
+    {
+        $this->sql = "INSERT INTO $this->table($this->fields) VALUES($this->dados)";
+
+        if (self::execSQL($this->sql)) {
+            $this->status = "Cadastrado com Sucesso!";
+        } else {
+            $this->status = "Erro ao cadastrar" . mysqli_error();
+        }
     }
 }
