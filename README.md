@@ -15,6 +15,41 @@ Desenvolvimento de um site para Cadastro de Certificados com horas extra curricu
 
 ----
 
+# Como Subir Mudanças no Git
+
+## Passo 1
+Adicionar novas mudanças
+
+```git
+git add .
+```
+
+## Passo 2
+Commitar as mudanças que você fez
+```git
+git commit -m "Qualquer mensagem aqui"
+```
+
+## Passo 3
+Se você estiver na branch main fazendo essas mudanças (pode ser verificado com **git status**) então você cria uma nova branch
+```git
+git checkout -b nova-branch
+```
+
+## Passo 4
+Agora que você criou uma branch você precisa voltar aonde você fez o commit
+```git
+git checkout main
+```
+
+## Passo 5
+Agora é só subir o commit para a nova branch
+```git
+git push origin nova-branch
+```
+
+----
+
 # A Fazer
 
 ## Área do Aluno
