@@ -54,7 +54,7 @@ git push origin nova-branch
 
 ## Área do Aluno
 - [X] Login do aluno.
-- [ ] Cadastrar certificado com descrição, data, hora e pdf.
+- [x] Cadastrar certificado com descrição, data, hora e pdf.
 
 ## Área do Coordenador
 - [X] Cadastro do coordenador.
