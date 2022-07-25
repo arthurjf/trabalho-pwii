@@ -21,10 +21,10 @@
                     <div class="mb-3">
                         <button name="button" type="submit" value="insert" class="btn btn-primary">Cadastrar</button>
                     </div>
-                    <div class="mb-3">
-                        <button name="button" type="submit" value="cancel" class="btn btn-outline-danger">Cancelar</button>
-                    </div>
                 </form>
+                <div class="mb-3">
+                    <a href="index.php" class="btn btn-outline-danger">Cancelar</a>
+                </div>
             </section>
         </div>
     </div>

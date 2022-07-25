@@ -40,6 +40,7 @@ class AlunoManipulaDados extends ManipulaDados
 
         return $output;
     }
+
     public function insert()
     {
         $this->sql = "INSERT INTO $this->table($this->fields) VALUES($this->dados)";
