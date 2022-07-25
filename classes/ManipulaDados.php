@@ -7,7 +7,9 @@ abstract class ManipulaDados extends Conexao
     protected $sql, $qr, $table, $fields, $dados, $status, $fieldId, $valueId;
 
     public abstract function validarLogin($login, $password);
+
     public abstract function insert();
+    
     public function setTable($t)
     {
         $this->table = $t;
@@ -37,8 +39,6 @@ abstract class ManipulaDados extends Conexao
     {
         $this->valueId = $id;
     }
-
-   
 
     public function getLastInsertId()
     {
