@@ -1,5 +1,6 @@
 <?php
 include_once("../../classes/CoordenadorManipulaDados.php");
+const CAMINHO_CERTIFICADOS = "../../certificados/";
 
 $botao = $_POST['button'];
 
@@ -23,6 +24,7 @@ switch ($botao) {
         $inserirPessoa->setFields("matricula, id_pessoa");
         $inserirPessoa->setDados("'$matricula', $insertId");
         $inserirPessoa->insert();
+        mkdir(CAMINHO_CERTIFICADOS . $nome, 0777);
 
         echo '<script> alert("' . $inserirAluno->getStatus() . '");</script>';
         break;

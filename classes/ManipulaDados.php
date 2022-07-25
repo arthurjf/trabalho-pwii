@@ -8,8 +8,17 @@ abstract class ManipulaDados extends Conexao
 
     public abstract function validarLogin($login, $password);
 
-    public abstract function insert();
-    
+    public function insert()
+    {
+        $this->sql = "INSERT INTO $this->table($this->fields) VALUES($this->dados)";
+
+        if (self::execSQL($this->sql)) {
+            $this->status = "Cadastrado com Sucesso!";
+        } else {
+            $this->status = "Erro ao cadastrar" . mysqli_error();
+        }
+    }
+
     public function setTable($t)
     {
         $this->table = $t;

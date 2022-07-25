@@ -38,9 +38,4 @@ class CoordenadorManipulaDados extends ManipulaDados
 
         return $output;
     }
-
-    public function insert()
-    {
-        // Ignored
-    }
 }
