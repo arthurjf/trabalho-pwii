@@ -8,15 +8,15 @@
                 <form action="controller/cadastrarcoordenador.php" method="post">
                     <div class="mb-3">
                         <label class="form-label">Nome completo</label>
-                        <input name="txtNome" type="name" class="form-control" />
+                        <input name="txtNome" type="name" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">E-mail</label>
-                        <input name="txtEmail" type="email" class="form-control" />
+                        <input name="txtEmail" type="email" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Senha</label>
-                        <input name="txtSenha" type="password" class="form-control" />
+                        <input name="txtSenha" type="password" class="form-control" required minlength="4" />
                     </div>
                     <div class="mb-3">
                         <button name="button" type="submit" value="insert" class="btn btn-primary">Cadastrar</button>
