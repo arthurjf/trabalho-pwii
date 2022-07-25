@@ -10,15 +10,16 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Certificados</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ver certificados</a></li>
+                            <li><a class="dropdown-item" href="?secao=vercertificado">Ver certificados</a></li>
                         </ul>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#"></a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" roFle="button" data-bs-toggle="dropdown" aria-expanded="false">Cadastrar</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="">Cadastrar Certificados</a></li>
+                            <li><a class="dropdown-item" href="?secao=cadastrarcertificado">Cadastrar Certificados</a></li>
                         </ul>
                     </li>
                 </ul>
