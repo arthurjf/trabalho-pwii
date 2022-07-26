@@ -1,6 +1,6 @@
 <?php
 const STATUS = [
-    0 => new Status("Não-classificado", "nao-classificado"),
+    0 => new Status("Aberto", "nao-classificado"),
     1 => new Status("Deferido", "deferido"),
     2 => new Status("Indeferido", "indeferido")
 ];

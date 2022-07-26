@@ -1,7 +1,7 @@
 <div class="container mt-4 h-100 ver-certificados">
     <h2 class="text-center mb-4">Certificados</h2>
     <div class="table-responsive overflow-visible">
-        <table class="table table-hover table-sm table-striped">
+        <table class="table shadow table-hover table-sm table-striped">
             <thead>
                 <tr>
                     <th class="start">ID</th>
@@ -13,7 +13,7 @@
             </thead>
             <tbody>
                 <?php
-                include_once("controller/gerenciarcertificados.php");
+                include_once("controller/visualizacertificados.php");
                 ?>
             </tbody>
         </table>

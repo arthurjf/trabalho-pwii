@@ -50,13 +50,6 @@ html {
     margin-bottom: auto;
 }
 
-.login .title,
-.signup .title {
-    border: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0, .125);
-}
-
 .login .title h2,
 .signup .title h2 {
     font-weight: 600;
@@ -68,6 +61,12 @@ html {
 .login .item,
 .signup .item {
     padding: 40px;
+    min-height: 350px;
+}
+
+.login .tab,
+.signup .tab {
+    padding-left: 40px;
 }
 
 .login .item .subtitle {

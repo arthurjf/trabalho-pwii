@@ -3,6 +3,7 @@
         <div class="row rounded shadow-lg col-lg-4 col-md-4 col-sm-12 panel">
             <section class="row title">
                 <h2 class="text-center">Cadastrar Coordenador</h2>
+                <hr>
             </section>
             <section class="row item">
                 <form action="controller/cadastrarcoordenador.php" method="post">
