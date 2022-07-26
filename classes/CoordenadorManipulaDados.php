@@ -38,4 +38,34 @@ class CoordenadorManipulaDados extends ManipulaDados
 
         return $output;
     }
+
+    public function getCertificados()
+    {
+        $this->sql = "SELECT tb_aluno.id AS aluno_id, 
+        tb_pessoa.id AS pessoa_id, 
+        tb_aluno.matricula AS aluno_matricula, 
+        tb_certificado.data AS certificado_data, 
+        tb_certificado.hora AS certificado_hora, 
+        tb_certificado.url AS certificado_url, 
+        tb_certificado.id AS certificado_id, 
+        tb_certificado.descricao AS certificado_descricao, 
+        tb_certificado.status AS certificado_status, 
+        tb_pessoa.email AS pessoa_email, 
+        tb_pessoa.nome AS pessoa_nome 
+        FROM tb_certificado 
+        INNER JOIN tb_aluno 
+        ON tb_certificado.id_aluno = tb_aluno.id 
+        INNER JOIN tb_pessoa 
+        ON tb_pessoa.id = tb_aluno.id_pessoa;";
+
+        $this->qr  = self::execSQL($this->sql);
+
+        $dados = array();
+
+        while ($row = @mysqli_fetch_assoc($this->qr)) {
+            array_push($dados, $row);
+        }
+
+        return $dados;
+    }
 }

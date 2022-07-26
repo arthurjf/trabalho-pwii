@@ -8,6 +8,24 @@
         <div class="row justify-content-between">
             <article class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
+                    <a class="btn btn-primary" href="#">
+                        <div class="card-body">
+                            <h5 class="card-title">Ver certificados</h5>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <a class="btn btn-primary" href="?secao=gerenciarcertificados">
+                        <div class="card-body">
+                            <h5 class="card-title">Gerenciar certificados</h5>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
                     <a class="btn btn-primary" href="?secao=cadastraraluno">
                         <div class="card-body">
                             <h5 class="card-title">Cadastrar Aluno</h5>
