@@ -14,7 +14,7 @@ if (count($dados) <= 0) {
 foreach ($dados as $dado) {
 ?>
     <tr class="item">
-        <th class="start"><?= $dado["certificado_id"] ?></th>
+        <th class="start"><?= $dado["pessoa_id"] ?></th>
         <td><?= $dado["nome"] ?></td>
         <td><?= $dado["matricula"] ?></td>
         <td><?= $dado["email"] ?></td>
