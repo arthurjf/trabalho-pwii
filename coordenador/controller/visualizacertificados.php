@@ -7,7 +7,7 @@ $dados = $manipulas->getCertificados();
 
 if (count($dados) <= 0) {
 ?>
-    <td class="text-center p-3" colspan="5">Nenhum certificado encontrado.</td>
+    <td class="text-center p-3" colspan="6">Nenhum certificado encontrado.</td>
 <?php
 }
 
@@ -21,6 +21,7 @@ foreach ($dados as $dado) {
         <td>
             <div class="<?= STATUS[$tempStatus]->tag ?>"><?= STATUS[$tempStatus]->nome ?></div>
         </td>
+        <td><?= $dado["certificado_hora"] ?></td>
         <td>
             <a class="btn d-inline" href="../<?= $dado["certificado_url"] ?>" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
