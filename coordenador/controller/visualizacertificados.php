@@ -5,6 +5,12 @@ include_once("../classes/Status.php");
 $manipulas = new CoordenadorManipulaDados();
 $dados = $manipulas->getCertificados();
 
+if (count($dados) <= 0) {
+?>
+    <td class="text-center p-3" colspan="5">Nenhum certificado encontrado.</td>
+<?php
+}
+
 foreach ($dados as $dado) {
     $tempStatus = $dado["certificado_status"];
 ?>
@@ -34,7 +40,7 @@ foreach ($dados as $dado) {
                         <button name="button" type="submit" value="indeferir" class="dropdown-item">Indeferir</button>
                     </form>
                     <form action="alterarcertificado.php" method="post">
-                    <input type="hidden" name="txtPessoaNome" value="<?= $dado["pessoa_nome"] ?>" />
+                        <input type="hidden" name="txtPessoaNome" value="<?= $dado["pessoa_nome"] ?>" />
                         <input type="hidden" name="txtMatriculaAluno" value="<?= $dado["aluno_matricula"] ?>" />
                         <input type="hidden" name="txtCertificadoId" value="<?= $dado["certificado_id"] ?>" />
                         <input type="hidden" name="txtDescricaoCertificado" value="<?= $dado["certificado_descricao"] ?>" />

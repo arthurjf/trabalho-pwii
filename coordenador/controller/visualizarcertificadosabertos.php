@@ -5,6 +5,12 @@ include_once("../classes/Status.php");
 $manipulas = new CoordenadorManipulaDados();
 $dados = $manipulas->getCertificadosByStatus(0);
 
+if (count($dados) <= 0) {
+    ?>
+        <td class="text-center p-3" colspan="5">Nenhum certificado em aberto.</td>
+    <?php
+    }
+
 foreach ($dados as $dado) {
     $tempStatus = $dado["certificado_status"];
 ?>
