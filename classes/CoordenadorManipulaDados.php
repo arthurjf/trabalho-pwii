@@ -98,4 +98,29 @@ class CoordenadorManipulaDados extends ManipulaDados
 
         return $dados;
     }
+
+    public function getHorasAlunos()
+    {
+        $this->sql = "SELECT tb_certificado.id AS certificado_id, 
+        tb_pessoa.nome, 
+        tb_aluno.matricula, 
+        tb_pessoa.email, 
+        SUM(IF(tb_certificado.status = 1, 
+        tb_certificado.hora,0)) AS certificado_horas 
+        FROM tb_aluno INNER JOIN tb_pessoa 
+        ON tb_aluno.id_pessoa = tb_pessoa.id 
+        INNER JOIN tb_certificado 
+        ON tb_certificado.id_aluno = tb_aluno.id 
+        GROUP BY tb_aluno.id";
+
+        $this->qr  = self::execSQL($this->sql);
+
+        $dados = array();
+
+        while ($row = @mysqli_fetch_assoc($this->qr)) {
+            array_push($dados, $row);
+        }
+
+        return $dados;
+    }
 }

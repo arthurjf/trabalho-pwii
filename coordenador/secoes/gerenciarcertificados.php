@@ -8,6 +8,7 @@
                     <th>Matrícula do Aluno</th>
                     <th>Descrição</th>
                     <th>Status</th>
+                    <th>Hora</th>
                     <th></th>
                 </tr>
             </thead>

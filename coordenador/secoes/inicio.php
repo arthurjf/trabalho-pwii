@@ -6,16 +6,16 @@
         <h2>ACESSO RÁPIDO</h2>
         <hr>
         <div class="row justify-content-between">
-            <article class="col-lg-4 col-md-6 col-sm-12">
+            <article class="mt-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
-                    <a class="btn btn-primary" href="#">
+                    <a class="btn btn-primary" href="?secao=certificadosemaberto">
                         <div class="card-body">
-                            <h5 class="card-title">Ver certificados</h5>
+                            <h5 class="card-title">Ver certificados em aberto</h5>
                         </div>
                     </a>
                 </div>
             </article>
-            <article class="col-lg-4 col-md-6 col-sm-12">
+            <article class="mt-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <a class="btn btn-primary" href="?secao=gerenciarcertificados">
                         <div class="card-body">
@@ -24,7 +24,16 @@
                     </a>
                 </div>
             </article>
-            <article class="col-lg-4 col-md-6 col-sm-12">
+            <article class="mt-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <a class="btn btn-primary" href="?secao=veralunos">
+                        <div class="card-body">
+                            <h5 class="card-title">Ver Alunos</h5>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <article class="mt-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <a class="btn btn-primary" href="?secao=cadastraraluno">
                         <div class="card-body">
