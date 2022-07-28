@@ -101,7 +101,7 @@ class CoordenadorManipulaDados extends ManipulaDados
 
     public function getHorasAlunos()
     {
-        $this->sql = "SELECT tb_certificado.id AS certificado_id, 
+        $this->sql = "SELECT tb_pessoa.id AS pessoa_id, 
         tb_pessoa.nome, 
         tb_aluno.matricula, 
         tb_pessoa.email, 
@@ -109,7 +109,7 @@ class CoordenadorManipulaDados extends ManipulaDados
         tb_certificado.hora,0)) AS certificado_horas 
         FROM tb_aluno INNER JOIN tb_pessoa 
         ON tb_aluno.id_pessoa = tb_pessoa.id 
-        INNER JOIN tb_certificado 
+        LEFT JOIN tb_certificado 
         ON tb_certificado.id_aluno = tb_aluno.id 
         GROUP BY tb_aluno.id";
 
