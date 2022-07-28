@@ -10,13 +10,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Certificados</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ver certificados</a></li>
+                            <li><a class="dropdown-item" href="?secao=certificadosemaberto">Em aberto</a></li>
                             <li><a class="dropdown-item" href="?secao=gerenciarcertificados">Gerenciar certificados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" roFle="button" data-bs-toggle="dropdown" aria-expanded="false">Alunos</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="?secao=veralunos">Ver alunos</a></li>
                             <li><a class="dropdown-item" href="?secao=cadastraraluno">Cadastrar aluno</a></li>
                         </ul>
                     </li>

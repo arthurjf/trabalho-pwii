@@ -13,7 +13,7 @@
             </thead>
             <tbody>
                 <?php
-                include_once("controller/visualizacertificados.php");
+                include_once("controller/visualizarcertificadosabertos.php");
                 ?>
             </tbody>
         </table>
