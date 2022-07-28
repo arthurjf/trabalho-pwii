@@ -50,13 +50,6 @@ html {
     margin-bottom: auto;
 }
 
-.login .title,
-.signup .title {
-    border: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0, .125);
-}
-
 .login .title h2,
 .signup .title h2 {
     font-weight: 600;
@@ -68,6 +61,12 @@ html {
 .login .item,
 .signup .item {
     padding: 40px;
+    min-height: 350px;
+}
+
+.login .tab,
+.signup .tab {
+    padding-left: 40px;
 }
 
 .login .item .subtitle {
@@ -130,4 +129,58 @@ html {
 
 .rodape .integrantes p {
     margin: 0.2rem;
+}
+
+.ver-certificados .start {
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+.ver-certificados .start {
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+.ver-certificados td {
+    vertical-align: middle;
+}
+
+.ver-certificados thead {
+    vertical-align: middle;
+}
+
+.ver-certificados td .btn-danger {
+    text-align: left;
+}
+
+.ver-certificados .deferido,
+.ver-certificados .indeferido,
+.ver-certificados .nao-classificado {
+    width: fit-content;
+    border: 0 solid;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.ver-certificados .nao-classificado {
+    background-color: #e3e3e3;
+    color: #545454;
+}
+
+.ver-certificados .deferido {
+    background-color: #b2ffa9;
+    color: #28851a;
+}
+
+.ver-certificados .indeferido {
+    background-color: #fee3e3;
+    color: #d03631;
+}
+
+.ver-certificados thead tr {
+    height: 50px;
+    vertical-align: middle;
+    background-color: var(--primary-color);
+    color: white;
 }
