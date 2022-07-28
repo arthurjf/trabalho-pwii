@@ -61,7 +61,7 @@ git push origin nova-branch
 - [X] Login do coordenador.
 - [X] Cadastro de aluno (pelo coordenador).
 - [X] Deferir, indeferir e alterar certificados cadastrados.
-- [ ] Imprimir a lista de certificado por nome do aluno e a contagem total de horas.
+- [X] Imprimir a lista de certificado por nome do aluno e a contagem total de horas.
 
 # Banco de Dados
 
