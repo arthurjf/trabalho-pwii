@@ -40,4 +40,19 @@ class AlunoManipulaDados extends ManipulaDados
 
         return $output;
     }
+
+    public function getMeusCertificados($alunoId)
+    {
+        $this->sql = "SELECT * FROM tb_certificado WHERE tb_certificado.id_aluno = 6;";
+
+        $this->qr  = self::execSQL($this->sql);
+
+        $dados = array();
+
+        while ($row = @mysqli_fetch_assoc($this->qr)) {
+            array_push($dados, $row);
+        }
+
+        return $dados;
+    }
 }

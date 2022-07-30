@@ -6,10 +6,10 @@ $manipulas = new CoordenadorManipulaDados();
 $dados = $manipulas->getCertificadosByStatus(0);
 
 if (count($dados) <= 0) {
-    ?>
-        <td class="text-center p-3" colspan="5">Nenhum certificado em aberto.</td>
-    <?php
-    }
+?>
+    <td class="text-center p-3" colspan="5">Nenhum certificado em aberto.</td>
+<?php
+}
 
 foreach ($dados as $dado) {
     $tempStatus = $dado["certificado_status"];
@@ -37,7 +37,8 @@ foreach ($dados as $dado) {
                     <input type="hidden" name="txtHorasCertificado" value="<?= $dado["certificado_hora"] ?>" />
                     <input type="hidden" name="txtURLCertificado" value="<?= $dado["certificado_url"] ?>" />
                     <input type="hidden" name="txtStatusCertificado" value="<?= $dado["certificado_status"] ?>" />
-                    <button class="btn mt-1 mb-1" name="button" type="submit" value="alterar" class="dropdown-item"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <button class="btn mt-1 mb-1" name="button" type="submit" value="alterar" class="dropdown-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </button>

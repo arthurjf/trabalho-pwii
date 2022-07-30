@@ -1,6 +1,5 @@
 <?php
 include_once("../classes/CoordenadorManipulaDados.php");
-include_once("../classes/Status.php");
 
 $manipulas = new CoordenadorManipulaDados();
 $dados = $manipulas->getHorasAlunos();
