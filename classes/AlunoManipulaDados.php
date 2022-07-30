@@ -43,7 +43,7 @@ class AlunoManipulaDados extends ManipulaDados
 
     public function getMeusCertificados($alunoId)
     {
-        $this->sql = "SELECT * FROM tb_certificado WHERE tb_certificado.id_aluno = 6;";
+        $this->sql = "SELECT * FROM tb_certificado WHERE tb_certificado.id_aluno = $alunoId;";
 
         $this->qr  = self::execSQL($this->sql);
 
