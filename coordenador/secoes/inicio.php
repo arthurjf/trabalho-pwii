@@ -5,7 +5,7 @@
     <section class="acessorapido mt-5">
         <h2>ACESSO RÁPIDO</h2>
         <hr>
-        <div class="row justify-content-between">
+        <div class="row d-line">
             <article class="mt-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <a class="btn btn-primary" href="?secao=certificadosemaberto">
